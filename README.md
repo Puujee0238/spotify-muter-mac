@@ -38,7 +38,7 @@ A small macOS LaunchAgent + AppleScript that watches Spotify and mutes Spotify a
 
     ~/bin/spotify-ad-muter-watcher.sh
 
-    ~/Library/LaunchAgents/com.local.spotifyadmuter.watcher.plist
+    ~/Library/LaunchAgents/com.github.puujee0238.spotifyadmuter.watcher.plist
 
 ```
 
@@ -83,7 +83,7 @@ Check LaunchAgent status:
 
 ```bash
 
-launchctl print gui/$(id -u)/com.local.spotifyadmuter.watcher | head
+launchctl print gui/$(id -u)/com.github.puujee0238.spotifyadmuter.watcher | head
 
 ```
 
@@ -175,11 +175,11 @@ Try reloading:
 
 ```bash
 
-launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.local.spotifyadmuter.watcher.plist
+launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.github.puujee0238.spotifyadmuter.watcher.plist
 
-launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.local.spotifyadmuter.watcher.plist
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.github.puujee0238.spotifyadmuter.watcher.plist
 
-launchctl kickstart -k gui/$(id -u)/com.local.spotifyadmuter.watcher
+launchctl kickstart -k gui/$(id -u)/com.github.puujee0238.spotifyadmuter.watcher
 
 ```
 
@@ -189,7 +189,7 @@ Restart the agent:
 
 ```bash
 
-launchctl kickstart -k gui/$(id -u)/com.local.spotifyadmuter.watcher
+launchctl kickstart -k gui/$(id -u)/com.github.puujee0238.spotifyadmuter.watcher
 
 ```
 
