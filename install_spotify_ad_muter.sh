@@ -1,7 +1,7 @@
 #!/bin/zsh
 set -euo pipefail
 
-LABEL="com.local.spotifyadmuter.watcher"
+LABEL="com.github.puujee0238.spotifyadmuter.watcher"
 BIN_DIR="$HOME/bin"
 AS_FILE="$BIN_DIR/spotify_ad_muter.applescript"
 WATCHER="$BIN_DIR/spotify-ad-muter-watcher.sh"
@@ -163,7 +163,7 @@ uninstall_all() {
   echo "Uninstalled: $LABEL"
 }
 is_service_running() {
-  launchctl print gui/$(id -u)/com.local.spotifyadmuter.watcher | head
+  launchctl print gui/$(id -u)/com.github.puujee0238.spotifyadmuter.watcher | head
 }
 
 case "${1:-install}" in
